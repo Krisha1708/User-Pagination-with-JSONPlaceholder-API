@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Pagination with JSONPlaceholder API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        #user-list {
+            margin: 20px ;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .user-item {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 400px;
+            height: 200px;
+        }
+        #pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #pagination button {
+            margin: 0 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #pagination button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>User List with PAgination</h1>
+    
+    <!--User data will apper here-->
+    <div id="user-list"></div>
+    
+    <!--pagination button are created dynamically will appear here-->
+    <div id="pagination"></div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
